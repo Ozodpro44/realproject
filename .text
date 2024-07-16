@@ -1,0 +1,19 @@
+INSERT INTO owner (
+    fullname,     
+    password,            
+    phone_numbeer,
+    gmail,        
+    telegram,     
+    github,       
+    linked_in,    
+    leetcode    
+) VALUES (
+    'Ozodbek Zokirjonov',
+    '1001',
+    '+998883707083',
+    'zokirjonovozodbek9@gmail.com',
+    't.me',
+    'github.com',
+    'linkedin.com',
+    'leetcode.com'
+)
