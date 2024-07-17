@@ -66,6 +66,10 @@ type Viewer struct {
 	Password string    `json:"password"`
 }
 
+type CheckViewer struct {
+	Gmail string `json:"gmail"`
+}
+
 type Comment struct {
 	CommentID uuid.UUID `json:"comment_id"`
 	Content   string    `json:"content"`
@@ -77,4 +81,15 @@ type Comment struct {
 type GetList struct {
 	Page  int32 `json:page`
 	Limit int32 `json:limit`
+}
+
+type Common struct {
+	TableName  string `json:table_name`
+	ColumnName string `json:column_name`
+	ExpValue   any    `json:exp_value`
+}
+
+type CheckExistsResp struct {
+	IatsExists bool
+	Status   string
 }
