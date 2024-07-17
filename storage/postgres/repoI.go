@@ -31,3 +31,7 @@ type ContentRepoI interface {
 type OwnerRepoI interface {
 	Login(ctx context.Context, login *models.LoginOwn) (*models.Owner, error)
 }
+
+type CommonRepoI interface {
+	CheckIsExists(ctx context.Context, req *models.Common) (bool, error)
+}
